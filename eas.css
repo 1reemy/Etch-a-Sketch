@@ -2,18 +2,32 @@
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     border-width: 1px; 
     border-style: solid;      
     margin:auto;   
 }
 #container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+
 }
 #title{
     display: flex;
     justify-content: center;
+}
+#control{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;    
+}
+#reset{
+    display: flex;
+    width:50px;
+    height:30px;
+    
 }

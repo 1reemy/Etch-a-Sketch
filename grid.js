@@ -19,4 +19,10 @@ function arrange(gridRow,col){
         })
     };
 }
-arrange(16,16);
+arrange(37,37);
+
+const reset = document.querySelector('#reset');
+reset.addEventListener('click', () =>{
+    location.reload();
+})
+
