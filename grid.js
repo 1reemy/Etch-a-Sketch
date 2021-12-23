@@ -1,28 +1,48 @@
 const grid = document.querySelector('#grid');
 
-function arrange(gridRow,col){
+function arrange(gridRow){
 
-    for(let i = 0; i <= (gridRow * col); i++){
+    for(let i = 0; i <= (gridRow * gridRow); i++){
         let row = document.createElement('div');
-        let column = document.createElement('div');
         row.style.cssText = "display:flex; flex: 1 1 0.5rem; background-color:white";
-        column.style.cssText = "display:flex; flex: 1 1 0.5rem; background-color:white";
 
         grid.appendChild(row);
-        grid.appendChild(column);
 
         row.addEventListener("mouseover",()=>{
             row.style.setProperty("background-color", "red");
         });
-        column.addEventListener("mouseover",()=>{
-            column.style.setProperty("background-color","red"); 
-        })
+
+        const draw = document.querySelector('#draw');
+        
+        draw.addEventListener('click',()=>{
+            row.addEventListener("mouseover",()=>{
+                row.style.setProperty("background-color", "red");
+            });            
+        });
+        
+        const eraser = document.querySelector('#eraser');
+
+        eraser.addEventListener('click',()=>{
+        row.addEventListener("mouseover",()=>{
+            row.style.setProperty("background-color", "white");
+        });
+        });                
     };
 }
-arrange(37,37);
 
-const reset = document.querySelector('#reset');
-reset.addEventListener('click', () =>{
+arrange(16);
+
+const clear = document.querySelector('#clear');
+clear.addEventListener('click',()=>{
     location.reload();
 })
 
+const size = document.querySelector('#size');
+size.addEventListener('click', () =>{
+    let gridSize = Number(prompt("Enter side length of grid."));
+    if(gridSize <= 100){
+       arrange(gridSize);
+    }else{
+        alert("Invalid Number!!!");
+    }
+});
