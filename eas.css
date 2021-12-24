@@ -4,29 +4,43 @@
     flex-wrap: wrap;
     width: 550px;
     height: 500px;
-    border-width: 1px; 
+    border-width: 2px; 
     border-style: solid;      
-    margin:auto;   
+    margin:auto;
 }
 #container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: crimson;
+    width: 50%;
+    padding-top: 50px;
+    border-radius: 20px;
+    box-shadow: 2px 15px 12px 8px;
 }
 #title{
     display: flex;
     justify-content: center;
 }
-#control{
+#control #colorControl{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 30%;
-    padding-top: 20px;    
+    padding-top: 20px; 
+    padding-bottom: 20px;   
 }
 #draw #size #clear #eraser{
     display: flex;
     width:50px;
     height:30px;   
+}
+body{
+    background-color: burlywood;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
 }
