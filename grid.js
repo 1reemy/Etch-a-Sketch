@@ -6,8 +6,6 @@ function arrange(gridRow){
         let row = document.createElement('div');
         row.style.cssText = "display:flex; flex: 1 1 0.5em; background-color:white";
 
-        grid.appendChild(row);
-
         const draw = document.querySelector('#draw');
         const colorOption = document.querySelector('#color');
         
@@ -33,7 +31,8 @@ function arrange(gridRow){
         row.addEventListener("mouseover",()=>{
             row.style.setProperty("background-color", "white");
         });
-        });                       
+        });
+        grid.appendChild(row);                       
     };
 }
 
