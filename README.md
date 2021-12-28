@@ -9,7 +9,7 @@ in drawing images.
 This program was created using HTML, CSS and Javascript.
 
 ## Lessons Learnt
-- I learnt how to Event Handler Events, namely mouseover to enable the user 
+- I learnt how to use Event Handler, namely mouseover events to enable the user 
 to manipulate the drawing area.
 - The most significant feature learnt was how to enable multiple divs to be 
 generated within the grid.
