@@ -45,7 +45,7 @@ clear.addEventListener('click',()=>{
 
 const size = document.querySelector('#size');
 size.addEventListener('click', () =>{
-    let gridSize = Number(prompt("Please enter the length of the grid."));
+    let gridSize = Number(prompt("Please enter the length of the grid. Value must be below 60."));
     grid.textContent = '';
     if(gridSize <= 60){
        arrange(gridSize);
