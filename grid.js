@@ -36,7 +36,7 @@ function arrange(gridRow){
     };
 }
 
-arrange(30);
+arrange(25);
 
 const clear = document.querySelector('#clear');
 clear.addEventListener('click',()=>{
@@ -45,11 +45,11 @@ clear.addEventListener('click',()=>{
 
 const size = document.querySelector('#size');
 size.addEventListener('click', () =>{
-    let gridSize = Number(prompt("Enter side length of grid."));
+    let gridSize = Number(prompt("Please enter the length of the grid."));
     grid.textContent = '';
-    if(gridSize <= 100){
+    if(gridSize <= 60){
        arrange(gridSize);
     }else{
-        alert("Invalid Number!!!");
+        alert("Please enter a smaller number");
     }
 });
