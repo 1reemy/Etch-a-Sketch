@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://1reemy.github.io/Etch-a-Sketch/</loc>
+    <loc>https://1reemy.github.io/Etch-a-Sketch/index.html</loc>    
+  </url>
+  <url>
+    <loc>https://1reemy.github.io/Etch-a-Sketch/eas.css</loc> 
+  </url>
+  <url>
+    <loc>https://1reemy.github.io/Etch-a-Sketch/grid.js</loc>
   </url>
 </urlset>
