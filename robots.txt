@@ -1,0 +1,3 @@
+Sitemap:https://1reemy.github.io/Etch-a-Sketch/sitemap.xml
+User-agent:*
+Disallow:
