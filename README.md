@@ -15,3 +15,6 @@ to manipulate the drawing area.
 generated within the grid.
 - Flexbox was also used to organize the HTML elements on the webpage.
 media queries were added to the program for mobile device responsiveness.
+
+## Screenshot of Etch-a-Sketch
+![image](https://user-images.githubusercontent.com/66215320/195364059-73640f31-f37c-46eb-8452-7acfbd90e4fa.png)
